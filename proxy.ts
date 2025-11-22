@@ -4,7 +4,7 @@ import { auth } from "@/lib/auth";
 
 const publicPaths = ["/login", "/forgot-password", "/reset-password"];
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Allow access to auth API routes
